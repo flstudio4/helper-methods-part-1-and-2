@@ -8,13 +8,13 @@
   <div>
     <%= label_tag :title %>
 
-    <%= text_field_tag :title, @the_movie.title %>
+    <%= text_field_tag "movie[title]", @the_movie.title %>
   </div>
 
   <div>
     <%= label_tag :description %>
 
-    <%= text_area_tag :description, @the_movie.description, { rows: 3 } %>
+    <%= text_area_tag "movie[description]", @the_movie.description, { rows: 3 } %>
   </div>
 
   <%= button_tag "Create a movie" %>
